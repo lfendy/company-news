@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivysettings>
+    <property name="lib.dir" value="${basedir}/lib"/>
+    <settings defaultResolver="local" defaultConflictManager="strict"/>
+    <resolvers>
+        <filesystem name="local" local="true">
+            <artifact pattern="${lib.dir}/[artifact]-[revision].[ext]"/>
+            <artifact pattern="${lib.dir}/[artifact]-[revision]-[conf].[ext]"/>
+        </filesystem>
+    </resolvers>
+</ivysettings>

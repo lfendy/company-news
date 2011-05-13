@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+    <info organisation="example" module="companyNews"/>
+
+    <configurations>
+        <conf name="default"/>
+        <conf name="compile" extends="default"/>
+    </configurations>
+
+    <dependencies>
+
+        <dependency org="commons" name="commons-fileupload" rev="1.2.1" conf="default->default"/>
+        <dependency org="commons" name="commons-logging" rev="1.0.4" conf="default->default"/>
+        <dependency org="freemarker" name="freemarker" rev="2.3.15" conf="default->default"/>
+        <dependency org="ognl" name="ognl" rev="2.7.3" conf="default->default"/>
+        <dependency org="prevayler" name="prevayler" rev="2.3" conf="default->default"/>
+        <dependency org="struts" name="struts2-core" rev="2.1.8" conf="default->default"/>
+        <dependency org="xwork" name="xwork-core" rev="2.1.6" conf="default->default"/>
+        <dependency org="javax" name="servlet-api" rev="2.5" conf="compile->default"/>
+    </dependencies>
+</ivy-module>

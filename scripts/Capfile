@@ -1,0 +1,10 @@
+BASE_DIR = "/tmp/deployment"
+
+task :deploy do
+  app_dir = '/usr/share/tomcat6/webapps/ROOT'
+  upload(war_file, '/tmp', :via => :scp)
+  run 'sudo /etc/init.d/tomcat6 stop'
+  run "sudo rm -rf #{app_dir}; sudo unzip -d #{app_dir} /tmp/#{File.basename(war_file)}"
+  run 'sudo /etc/init.d/tomcat6 start'
+end
+
