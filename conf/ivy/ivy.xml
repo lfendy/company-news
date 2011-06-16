@@ -5,6 +5,7 @@
     <configurations>
         <conf name="default"/>
         <conf name="compile" extends="default"/>
+        <conf name="test" extends="compile"/>
     </configurations>
 
     <dependencies>
@@ -17,5 +18,6 @@
         <dependency org="struts" name="struts2-core" rev="2.1.8" conf="default->default"/>
         <dependency org="xwork" name="xwork-core" rev="2.1.6" conf="default->default"/>
         <dependency org="javax" name="servlet-api" rev="2.5" conf="compile->default"/>
+        <dependency org="junit" name="junit" rev="4.8.2" conf="test->default"/>
     </dependencies>
 </ivy-module>

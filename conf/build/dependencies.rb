@@ -21,6 +21,7 @@ namespace :dependencies do
     ant.ivy_configure :file => "${basedir}/conf/ivy/ivysettings.xml"
     ant.ivy_resolve :file => "${basedir}/conf/ivy/ivy.xml",  :transitive => "true"
     ant.ivy_cachepath :pathid => "compile.classpath", :conf => "compile", :type => "jar"
+    ant.ivy_cachepath :pathid => "test.classpath", :conf => "test", :type => "jar"
     ant.ivy_retrieve :pattern => "${basedir}/target/lib/[artifact]-[revision].[ext]", :sync => "true", :conf => "default"
   end
 end

@@ -1,6 +1,7 @@
 namespace :compile do
   task :all do
     run_compiler :folder => "main", :classpathref => "compile.classpath"
+    run_compiler :folder => "test", :classpathref => "test.classpath"
   end
 
   def run_compiler(options)

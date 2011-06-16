@@ -1,3 +1,5 @@
 target
 .idea
 webapp.iml
+out
+static.zip
