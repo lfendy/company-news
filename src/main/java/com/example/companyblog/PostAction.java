@@ -11,7 +11,7 @@ public class PostAction extends BlogAction {
             prevayler().execute(new PostCommand(this.title, this.body));
             return "success";
         }
-        return "input";
+        return "input-page";
     }
 
     public String getBody() {
