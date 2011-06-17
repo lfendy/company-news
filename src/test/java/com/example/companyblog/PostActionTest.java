@@ -12,6 +12,6 @@ public class PostActionTest {
 
         String page = action.execute();
 
-        assertThat(page, is("input"));
+        assertThat(page, is("input-page"));
     }
 }
