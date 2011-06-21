@@ -8,7 +8,7 @@
 <title>Hey now!</title>
 </head>
 <body>
-	<h1>Welcome to Company!</h1>
+	<h1>Welcome to ThoughtWorks University!</h1>
     <!-- img src="/images/logo.png" alt="logo" /-->
 	<a href="Read.action">Read our company blog</a>
 </body>
